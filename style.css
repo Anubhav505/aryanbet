@@ -33,7 +33,6 @@ body {
     height: 120px;
   }
   .mainImg div {
-
     padding-left: 5px;
   }
   .mainImg div h1 {
@@ -53,23 +52,24 @@ body {
   .boxes {
     padding: 10px;
   }
-  .boxes ul li {
-    height: 120px;
-    width: 120px;
-    text-align: center;
-  }
   .boxes ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
   }
-
-  .live {
-    height: 40px;
-    width: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .boxes ul li {
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    overflow: hidden;
+  }
+  .boxes ul li h1 {
+    font-size: 10px;
+    width: 100px;
+  }
+  .live{
+    font-size: 18px !important;
+    width: 60px !important;
   }
   .footer {
     display: grid;
