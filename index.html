@@ -15,6 +15,9 @@
     />
   </head>
   <body class="main h-screen w-full bg-[rgb(0,5,3)]">
+     <div id="loading-screen" class="fixed top-0 left-0 w-full h-full bg-black flex items-center justify-center">
+    <div class="loader"></div>
+  </div>
     <div class="nav flex justify-between items-center py-2 px-2">
       <div class="flex text-3xl gap-2">
         <div><i class="ri-menu-line"></i></div>
@@ -125,5 +128,12 @@ chat
         <h1>Chat With Us</h1>
       </div>
     </div>
+    <script>window.addEventListener('load', function() {
+    setTimeout(function() {
+      const loadingScreen = document.getElementById('loading-screen');
+      loadingScreen.style.opacity = '0';
+      setTimeout(() => loadingScreen.style.display = 'none', 500); // Wait for the transition
+    }, 2000); // Delay for 2 seconds
+  });</script>
   </body>
 </html>
